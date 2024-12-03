@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+         <image src="images/logo.jpg" width="80px"></image>
+         <h1>Educab</h1>
+         <nav>
+            <a href="#" class="hideonmobile">Services</a>
+            <a href="#" class="hideonmobile">About</a>
+            <a href="#" class="hideonmobile">Case Studies</a>
+            <a href="#" class="hideonmobile">Contact</a>
+            <a href="#" class="menubutton" onclick="showsidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 -960 960 960" width="27px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+        </nav>
+    </div>
+        <div class="sidebar">
+            <nav>
+                <a href="#" onclick="hidesidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+                <a href="#">Services</a>
+                <a href="#">About</a>
+                <a href="#">Case Studies</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    
+    <h1 class="t1">Case  Studies</h1>
+    <div class="container">
+        <image src="images/img1.jpg" class="img1" width="45%" height="30%"></image>
+        <div class="content2">
+            <button class="product">Product Design</button><br><br><br>
+            <h2>Global Partnership Channels More Than USD $1 Billion to Scale Up Weather Services for Hundreds of Millions of Farmers Across Asia, Latin America and Africa</h2><br>
+            <p>A consortium of global partners has committed to mobilizing significant investments over the next three years to drive the implementation of the AIM for Scale Weather Package.</p><br>
+            <a href="#">Read More >></a>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="content1">
+            <button class="product">Product Design</button><br><br><br>
+            <h2>Global Coalition Pledges $10 Billion for Brazilian Forest Restoration and Conservation</h2><br>
+            <p>This public-private partnership brings together major financial institutions, conservation organizations, and government entities to support Brazil’s environmental goals, making it one of the most comprehensive forest restoration programs in the world.</p><br>
+            <a href="#">Read More >></a>
+        </div>
+        <image src="images/India_Farming.jpg" class="img2" width="52%" height="20%"></image>
+    </div><br>
+    <div class="container2">
+        <image src="images/img3.avif" class="img3"  width="45%" height="30%"></image>
+        <div class="content3">
+            <button class="product1">Product Design</button><br><br><br>
+            <h2>Global Alliance to Scale Up Investments in Smallholder and family Farming to Combat Hunger and Poverty</h2><br>
+            <p>The initiative prioritizes smallholder farmers and family farming systems, which are vital to local food security, climate resilience, and poverty reduction.</p><br>
+            <a href="#">Read More >></a>
+        </div>
+    </div>
+    <div class="container3">
+        <div class="content4">
+            <button class="product1">Product Design</button><br><br><br>
+            <h2>ECOWAS Transport Ministers to Slash Air travel Charges and Taxes by 25% by january 2026</h2><br>
+            <p>This landmark move aims to lower travel costs, drive economic growth, and strengthen regional integration, significantly impacting the region’s aviation industry and enhancing ease of movement for people and goods across ECOWAS states.</p><br>
+            <a href="#">Read More >></a>
+        </div>
+        <image src="images/watering-crops.jpeg" class="img4" width="52%" height="20%"></image>
+    </div>
+
+    <script>
+        function showsidebar(){
+            const sidebar=document.querySelector('.sidebar')
+            sidebar.style.display='block'
+        }
+        function hidesidebar(){
+            const sidebar=document.querySelector('.sidebar')
+            sidebar.style.display='none'
+        }
+    </script>
+</body>
+</html>

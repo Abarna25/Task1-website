@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    display: flex;
+}
+h1{
+    margin-top: 24px;
+}
+.header a{
+    padding: 20px;  
+    font-family: poppins;
+    font-size: 20px;
+    color: black;
+}
+.header nav{
+    margin-top: 25px;
+    margin-left: 45%;
+}
+.header a:hover{
+    background-color:rgb(201, 196, 196);
+    border-radius: 30px;
+}
+.t1{
+    margin-left: 20px;
+}
+.menubutton{
+    display: none;
+}
+.menubutton:hover{
+    background-color: rgb(201, 196, 196);
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+}
+.sidebar a{ 
+    display: block;
+    padding: 20px;
+    color: black;
+}
+.sidebar a:hover{
+    background-color: rgb(201, 196, 196);
+}
+.img1{
+    padding-top: 20px;
+    padding-left: 22px;
+    width: 45%;
+    height: auto;
+}
+.img2{
+    margin-top: 0;
+    padding: 0;
+}
+.img3{
+    margin-left: 22px;
+}
+.content1{
+    background-color: rgb(120, 177, 33);
+    padding: 20px;
+    width: 42%;
+    margin-left: 22px;
+    padding-bottom: 15%;
+}
+.content4{
+    background-color: rgb(226, 161, 39);
+    padding: 20px;
+    width: 42%;
+    margin-left: 22px;
+    padding-bottom: 4%;
+}
+.content2{
+    background-color: rgb(206, 233, 167);
+    margin-top: 20px;
+    padding: 20px;
+    margin-right: 5px;
+    
+    padding-bottom: 65px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+     
+}
+.container1{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.container3{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.content2 a{
+    color: black;
+}
+.content3 a{
+    color: black;
+}
+.content4 a{
+    color: black;
+}
+.content1 a{
+    text-align: right;
+    color: black;
+    display: inline-block;
+    margin-top: 10px;
+}
+.container2{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;   
+}
+.content3{
+    background-color: rgb(220, 187, 115);
+    padding: 20px;
+    margin-right: 5px;
+    padding-bottom: 117px;
+}
+.product{
+    margin-top: 30px;
+    padding: 5px;
+    background-color: rgb(165, 214, 91);
+    color: black;
+    border-radius: 10px;
+}
+.product1{
+    margin-top: 30px;
+    padding: 5px;
+    background-color: rgb(203, 166, 87);
+    color: black;
+    border-radius: 10px;
+}
+@media(max-width: 800px){
+    .hideonmobile{
+        display: none;
+    }
+    .menubutton{
+        display: block;
+    }
+}
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+}
